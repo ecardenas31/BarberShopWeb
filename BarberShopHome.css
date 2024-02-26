@@ -8,6 +8,8 @@
 }
 body {
     min-height: 100vh;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/643ac840b155935e5f0388c7/0d064af1-88ce-467e-bf43-ea31725bccc0/FDCF3C26-B0B1-478E-9669-3570C6CC5D0C.jpeg);
+    background-size: 1200px;
 }
 
 .header {
@@ -100,6 +102,12 @@ ul{
     box-sizing: border-box;
     width: 50px;
 }
+
+#socLogo{
+    width: 40px;
+    border-radius: 50%;
+}
+
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
