@@ -93,6 +93,79 @@ body {
     }
 }
 
+.carousel{
+    width: 50vw;
+    height: 40vw;
+    position: relative;
+    display: block;
+    margin:5% auto;
+    left: 0;
+    right: 0;
+}
+
+.carousel > ul { /*gets rid of scroll bar and margin and padding that was coming from the image list*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide { 
+    position: absolute;
+    inset: 0;
+    opacity: 0; /*this hides the images*/
+ /*cuz the opacity is 0 when hitting previous image it does not transtion, adding this will allow the transition to fade when hitting previous*/
+    transition-delay: 200ms; /*old image wont fade out till the transition to the new picture is complete so it looks more smooth */
+}
+
+.slide > img {
+    display:block;
+    object-fit: cover; /*object-fit cover makes sure the image is maintained when resizing it*/
+    object-position: center;
+    padding-top: 100px;
+}
+
+.slide[data-active]
+{
+    opacity: 1; /*this allows the active image to show which is the first image*/
+    z-index: 1; /*makes sure that active slide is on top*/
+     /*active slide does not have a delay, with this it will start its fade in animation instantly*/
+    transform: translateX(25%);
+    transition-delay: 0ms;
+}
+
+.carousel-button {
+    position: absolute;
+    z-index: 2; /*bring arrows to above the picture*/
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%; 
+    transform: translateY(-50%); /*puts arrows directly in the middle of picture on Y axis*/
+    color:rgba(255, 255, 255, .5); /* makes the arrows transparent*/
+    cursor: pointer; /*when hover over arrows. mouse turns to pointer*/
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1)
+}
+
+.carousel-button:hover, /*when hovering over arrows the arrows turn white*/
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2) /*background of arrows also become darcker when mouse is over it*/
+
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.prev {
+    left: -4rem;
+}
+/*this seperates the left and right button to the opposite sides*/
+.carousel-button.next {
+    right: -4rem;
+}
 
 
 /* Footer Styles*/
