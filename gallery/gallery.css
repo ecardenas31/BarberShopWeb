@@ -14,8 +14,6 @@ html, body {
 }
 
 body {
-    display: flex;
-    flex-direction: column; /* Align content in a column */
     min-height: 100vh; /* Minimum height of viewport */
     background-color: black;
 }
@@ -94,17 +92,15 @@ body {
 }
 
 .content{
-    width: 100%;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
     padding: 100px 8%;
+    margin: 0 auto !important; /*allows content to stay in middle. the auto is for left and right*/
+    float: none !important;
+    max-width: 1500px;
 }
 
 .gallery{
     display: grid;
-    padding-top: 100px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 30% 30% 30%;
     grid-gap: 30px;
 }
 
@@ -112,7 +108,7 @@ body {
     width: 100%;
 }
 
-#img1{
+#img1{ /*fixes the first image in gallery since it shaped differently*/
     height: 100%;
 }
 
@@ -183,10 +179,6 @@ ul{
 .footer-col ul li a:hover{
     color:#ffffff;
     padding-left: 8px;
-}
-
-.content {
-    flex: 1; /* Allows content to expand and push footer down */
 }
 
 /*Responsive!*/
