@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="lightbox.css">
     <script src="/menu-toggle.js"></script>
     <script src="gallery.js" defer></script>
+    <script src="lightbox-plus-jquery.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -25,12 +28,24 @@
 
     <div class="content">
         <div class="gallery">
-            <img src="./imagesGallery/galleryImage1.jpg" alt="">
-            <img src="./imagesGallery/galleryImage2.jpeg" alt="">
-            <img src="./imagesGallery/galleryImage3.jpg" alt="">
-            <img src="./imagesGallery/galleryImage4.jpg" alt="">
-            <img src="./imagesGallery/galleryImage5.jpg" alt="">
-            <img src="./imagesGallery/galleryImage6.jpeg" alt="">
+            <a href="./imagesGallery/galleryImage1.jpg" data-lightbox="models" data-title="caption1">
+                <img src="./imagesGallery/galleryImage1.jpg" id="img1" alt="">
+            </a>
+            <a href="./imagesGallery/galleryImage2.jpeg" data-lightbox="models" data-title="caption2">
+                <img src="./imagesGallery/galleryImage2.jpeg" alt="">
+            </a>
+            <a href="./imagesGallery/galleryImage3.jpg" data-lightbox="models" data-title="caption3">
+                <img src="./imagesGallery/galleryImage3.jpg" alt="">
+            </a>
+            <a href="./imagesGallery/galleryImage4.jpg" data-lightbox="models" data-title="caption4"">
+                <img src="./imagesGallery/galleryImage4.jpg" alt="">
+            </a>
+            <a href="./imagesGallery/galleryImage5.jpg" data-lightbox="models" data-title="caption5">
+                <img src="./imagesGallery/galleryImage5.jpg" alt="">
+            </a>
+            <a href="./imagesGallery/galleryImage6.jpeg" data-lightbox="models" data-title="caption6">
+                <img src="./imagesGallery/galleryImage6.jpeg" alt="">
+            </a>
         </div>
     </div>
 
