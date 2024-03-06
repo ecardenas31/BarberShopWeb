@@ -93,13 +93,25 @@ body {
     }
 }
 
-#bio_photo{
-    width: 50%;
-    transform: translateY(60%);
+.content{
+    padding: 100px 8%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
-.body_container{
-    height: 1000px;
+.body_container h3{
+    color: #ffffff;
+}
+
+.body_container p{
+    color: #ffffff;
+}
+
+#bio_photo{
+    max-height: 800px;
+    float: left;
+    width: 500px;
+    padding-right: 30px;
 }
 
 /* Footer Styles*/

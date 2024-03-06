@@ -93,13 +93,8 @@ body {
     }
 }
 
-#bio_photo{
-    width: 50%;
-}
-
-.body_container{
-    float: inline-end;
-    height: 1000px;
+.content{
+    max-width: 1500px;
 }
 
 /* Footer Styles*/
