@@ -104,9 +104,19 @@ body {
 
 .gallery{
     display: grid;
+    padding-top: 100px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
 
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery{
+        transform: translateY(20%);
+    }
+    .footer{
+        transform: translateY(150%);
+    }
 }
 
 .gallery img{
