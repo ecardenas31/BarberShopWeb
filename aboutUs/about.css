@@ -100,11 +100,26 @@ body {
 }
 
 .body_container h3{
-    color: #ffffff;
+    color: rgb(175, 138, 89);
+    text-decoration-line: underline;
 }
 
 .body_container p{
-    color: #ffffff;
+    color: rgb(175, 138, 89);
+    margin-top: 10px;
+}
+
+.app_button{
+    color: rgb(175, 138, 89);
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: black;
+    border-color:rgb(175, 138, 89) ;
+    padding: 5px;
+}
+
+.app_button a{
+    color: rgb(175, 138, 89);
 }
 
 #bio_photo{
