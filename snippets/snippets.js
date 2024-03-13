@@ -1,14 +1,15 @@
 
 const sleepLink = document.getElementById('sleepLink');
 const scalpLink = document.getElementById( 'scalpLink' );
-const hairThinLink = document.getElementById("hairThinLink");
-const scalpPsoriasisLink = document.getElementById("scalpPsoriasisLink");
-const dandruffLink = document.getElementById("dandruffLink");
-const scalpInfectionLink = document.getElementById("scalpInfectionLink");
-const baldSpotLink = document.getElementById("baldSpotsLink");
+const hairThinLink = document.getElementById('hairThinLink');
+const scalpPsoriasisLink = document.getElementById('scalpPsoriasisLink');
+const dandruffLink = document.getElementById('dandruffLink');
+const scalpInfectionLink = document.getElementById('scalpInfectionLink');
+const baldSpotLink = document.getElementById('baldSpotsLink');
 
 sleepLink.addEventListener('click', function(event) {
     event.preventDefault();
+    console.log('Clicked Sleep Link');
     renderBlogContent('sleep');
 });
 scalpLink.addEventListener('click', function(event) {
