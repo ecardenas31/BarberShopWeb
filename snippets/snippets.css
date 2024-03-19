@@ -193,7 +193,7 @@ ul{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px;
+    padding: 20px;
     border-bottom: 1px solid rgba(175, 138, 89);
     margin-top: 180px;
 }
@@ -289,4 +289,15 @@ ul{
     #blog{
         padding: 20px;
     }
+}
+.blog-content{
+    color: rgb(175, 138, 89);
+
+}
+.blog-content h1{
+    font-size: 45px;
+}
+.blog-section {
+    padding: 30px;
+    border-radius: 8px;
 }
