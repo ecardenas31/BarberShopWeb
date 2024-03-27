@@ -29,7 +29,7 @@ while True:
     sentence = input("You: ")
     if sentence == "quit":
         break
-
+def get_response(sentence):
     sentence = tokenize(sentence)
     x = bag_of_words(sentence, all_words)
     x = x.reshape(1, x.shape[0])
