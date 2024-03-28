@@ -126,6 +126,7 @@ body {
     float: none !important;
     max-width: 1500px;
   }
+  
   .store-card {
     width: calc(33.33% - 24px);
     background-color: black;
