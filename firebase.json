@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "/Users/danielochoa/Downloads/GitHub/BarberShopWeb",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
