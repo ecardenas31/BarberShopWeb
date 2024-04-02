@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "BarberShopWeb",
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
