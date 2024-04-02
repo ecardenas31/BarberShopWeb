@@ -7,7 +7,7 @@ import torch.nn as nn
 from torch.utils.data  import Dataset, DataLoader
 from trainModel import NeuralNetwork
 
-with open('intents.json', 'r') as f:
+with open('FirebaseProject/intents.json', 'r') as f:
     intents = json.load(f)
 
 all_words = []
